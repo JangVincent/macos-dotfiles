@@ -6,7 +6,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Install Cask
 echo "📦 Installing Fomulars and Casks Using homebrew"
 brew 
-brew install git gnupg bat fzf fd fnm eza go fastfetch uv ripgrep tree zoxide zsh-autosuggestions zsh-syntax-highlighting starship oven-sh/bun/bun neovim git-delta gemini-cli hashicorp/tap/terraform direnv awscli
+brew install git gnupg bat fzf fd fnm eza go fastfetch uv ripgrep tree zoxide zsh-autosuggestions zsh-syntax-highlighting starship oven-sh/bun/bun neovim git-delta gemini-cli hashicorp/tap/terraform direnv tree-sitter-cli awscli
 brew install --cask font-fira-code-nerd-font orbstack google-chrome raycast slack notion kitty beekeeper-studio karabiner-elements visual-studio-code yaak claude-code
 
 # Set hushlogin

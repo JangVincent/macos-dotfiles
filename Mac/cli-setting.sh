@@ -6,8 +6,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Install Cask
 echo "📦 Installing Fomulars and Casks Using homebrew"
 brew 
-brew install git gnupg bat fzf fd fnm eza go fastfetch openjdk@21 uv ripgrep tree zoxide zsh-autosuggestions zsh-syntax-highlighting starship oven-sh/bun/bun rbenv neovim git-delta gemini-cli hashicorp/tap/terraform direnv awscli
-brew install --cask font-fira-code-nerd-font orbstack google-chrome raycast slack notion ghostty beekeeper-studio cursor karabiner-elements visual-studio-code yaak chatgpt spotify
+brew install git gnupg bat fzf fd fnm eza go fastfetch uv ripgrep tree zoxide zsh-autosuggestions zsh-syntax-highlighting starship oven-sh/bun/bun neovim git-delta gemini-cli hashicorp/tap/terraform direnv awscli
+brew install --cask font-fira-code-nerd-font orbstack google-chrome raycast slack notion kitty beekeeper-studio karabiner-elements visual-studio-code yaak claude-code
 
 # Set hushlogin
 echo "📦 Setting hushlogin for terminal environment"
@@ -18,14 +18,6 @@ echo "📦 Install NodeJS LTS and Yarn"
 eval "$(fnm env --use-on-cd)"
 fnm install lts/latest
 npm install --global yarn pnpm
-
-# ruby
-echo "📦 Install Ruby"
-eval "$(rbenv init - --no-rehash zsh)"
-rbenv install 3.4.6
-rbenv global 3.4.6
-gem install bundler
-
 
 # Set .zshrc
 echo "📦 Setting .zshrc"
@@ -49,12 +41,6 @@ export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
 
 # Go install path
 export PATH="$HOME/go/bin:$PATH"
-
-# Flutter install path
-export PATH=$HOME/flutter/bin:$PATH
-
-# Ruby gem
-export PATH=$HOME/.gem/bin:$PATH
 
 # Direnv
 eval "$(direnv hook zsh)"
@@ -171,9 +157,6 @@ echo "↳ Ctrl + r => Find terminal history"
 echo "↳ Ctrl + g => Find file with content of file"
 echo "↳ Ctrl + p => Find file with file name"
 echo "↳ Ctrl + t => Find file with file name"
-echo "↳ In Ghostty : ctrl+-/| => split panel" 
-echo "↳ In Ghostty : opt+arrow => move between split panel" 
-echo "↳ In Ghostty : opt+h/j/k/l => resize of specific split panel" 
 echo "↳ In FZF : ctrl+j/k => preview scroll" 
 echo "↳ In FZF : ctrl+n/p => preview search list" 
 echo "✅ All cli setting is done. Let's hack!"

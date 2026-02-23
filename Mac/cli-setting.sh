@@ -8,6 +8,7 @@ echo "📦 Installing Fomulars and Casks Using homebrew"
 brew 
 brew install git gnupg bat fzf fd fnm eza go fastfetch uv ripgrep tree zoxide zsh-autosuggestions zsh-syntax-highlighting starship oven-sh/bun/bun neovim git-delta gemini-cli hashicorp/tap/terraform direnv tree-sitter-cli awscli
 brew install --cask font-fira-code-nerd-font orbstack google-chrome raycast slack notion kitty beekeeper-studio karabiner-elements visual-studio-code yaak claude-code
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Set hushlogin
 echo "📦 Setting hushlogin for terminal environment"
@@ -36,8 +37,8 @@ export PATH="$PATH:$(yarn global bin)"
 # Pnpm
 alias pn=pnpm
 
-# open JDK
-export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
+# Rust/Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Go install path
 export PATH="$HOME/go/bin:$PATH"
